@@ -1,0 +1,176 @@
+@use "mixin";
+
+.about {
+    padding: 639px 0 0;
+    margin-top: -411px;
+    background-image: url(../images/section-bg.webp);
+    background-repeat: no-repeat;
+    background-size: calc(100% + 759px) auto;
+    background-position: top left -73px;
+
+    &__intro {
+        padding: 0 48px 0 202px;
+        display: flex;
+        gap: 79px;
+        align-items: flex-end;
+        justify-content: space-between;
+        position: relative;
+        @include mixin.m1440 {
+            padding: 0 48px;
+            gap: 60px;
+        }
+        &::before {
+            content: "";
+            width: calc(100% + 635px);
+            aspect-ratio: 2555 / 940;
+            background: url(../images/cloud.webp) no-repeat center;
+            background-size: cover;
+            mix-blend-mode: Screen;
+            position: absolute;
+            top: 308px;
+            left: -73px;
+            z-index: 0;
+        }
+        &Content {
+            width: 32%;
+            max-width: 529px;
+            padding-bottom: 50px;
+            position: relative;
+            z-index: 1;
+            @include mixin.m1440 {
+                width: 40%;
+            }
+        }
+        &Img {
+            width: 68%;
+            max-width: 1062px;
+            position: relative;
+            z-index: 1;
+            @include mixin.m1440 {
+                width: 60%;
+            }
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+        &Title {
+            margin-bottom: 23px;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+        &Text {
+            font-size: 2.8rem;
+            line-height: 3.5rem;
+            font-weight: 500;
+            color: #052677;
+        }
+    }
+
+    &__addr {
+        margin-top: 281px;
+        padding: 0 48px 0 124px;
+        min-height: 862px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        @include mixin.m1440 {
+            padding: 0 48px;
+        }
+        &Img {
+            width: 853px;
+            height: 862px;
+            position: absolute;
+            top: 0;
+            left: calc(50% - 385px);
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+        &Title {
+            position: relative;
+            z-index: 1;
+            img {
+                display: block;
+                height: auto;
+            }
+        }
+        &Text {
+            font-size: 2.8rem;
+            line-height: 4rem;
+            font-weight: 400;
+            color: #052677;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            strong {
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__road {
+        margin-top: 89px;
+        position: relative;
+        &::before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+            border-right: 80vw solid transparent;
+            border-left: 0px solid transparent;
+            border-bottom: 10vw solid #fff9e1;
+            border-top: 0;
+        }
+        &::after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 0;
+            border-right: 0px solid transparent;
+            border-left: 80vw solid transparent;
+            border-bottom: 30vw solid #fff9e1;
+            border-top: 0;
+        }
+        &Bg {
+            display: block;
+            width: 100%;
+            height: auto;
+            position: relative;
+            z-index: 1;
+        }
+        &Aeon {
+            display: block;
+            width: 19.6%;
+            max-width: 376px;
+            height: auto;
+            position: absolute;
+            top: 0;
+            right: 14%;
+            z-index: 2;
+        }
+        &Text {
+            display: block;
+            width: 44.5%;
+            max-width: 851px;
+            height: auto;
+            position: absolute;
+            bottom: 6.68%;
+            right: 2.085%;
+            z-index: 2;
+        }
+    }
+}

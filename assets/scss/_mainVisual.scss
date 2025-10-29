@@ -1,0 +1,118 @@
+@use "mixin";
+
+.mainVisual {
+    padding-top: 35px;
+    position: relative;
+    &__title {
+        font-family: "Amatic SC", sans-serif;
+        font-weight: 700;
+        font-size: 4.8rem;
+        line-height: 6.1rem;
+        color: #000;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+    &__text {
+        width: 100%;
+        padding: 0 38% 0 13.9%;
+        position: absolute;
+        top: 343px;
+        left: 0;
+        z-index: 1;
+        @include mixin.m1440 {
+            padding: 0 36% 0 10%;
+            top: 323px;
+        }
+        img {
+            display: block;
+            height: auto;
+        }
+    }
+    &__bg {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 314px;
+        position: relative;
+        z-index: 1;
+    }
+    &__icon1 {
+        display: block;
+        width: 1249px;
+        height: 459px;
+        aspect-ratio: 1249 / 459;
+        background: url(../images/cloud.webp) no-repeat center;
+        background-size: contain;
+        mix-blend-mode: Screen;
+        position: absolute;
+        top: -15px;
+        left: -544px;
+        z-index: 0;
+    }
+    &__icon2 {
+        display: block;
+        width: 1249px;
+        height: 459px;
+        aspect-ratio: 1249 / 459;
+        background: url(../images/cloud.webp) no-repeat center;
+        background-size: contain;
+        mix-blend-mode: Screen;
+        position: absolute;
+        top: 364px;
+        right: -709px;
+        z-index: 0;
+    }
+    &__icon3 {
+        display: block;
+        width: 333px;
+        height: 418px;
+        background: url(../images/nhayDu.webp) no-repeat center;
+        background-size: contain;
+        position: absolute;
+        top: 214px;
+        right: 0;
+        z-index: 0;
+    }
+    &__icon4 {
+        display: block;
+        width: 368px;
+        height: 262px;
+        background: url(../images/plane.png) no-repeat center;
+        background-size: contain;
+        position: absolute;
+        top: 929px;
+        left: 99px;
+        z-index: 0;
+        @include mixin.m1440 {
+            transform: scale(0.9);
+            transform-origin: left top;
+            top: 829px;
+            left: 0;
+        }
+        @include mixin.tab {
+            transform: scale(0.7);
+            top: 729px;
+        }
+    }
+    &__icon5 {
+        display: block;
+        width: 554px;
+        height: 482px;
+        background: url(../images/leaf.png) no-repeat center;
+        background-size: contain;
+        position: absolute;
+        top: 1354px;
+        left: -136px;
+        z-index: 0;
+        @include mixin.m1440 {
+            transform: scale(0.9);
+            transform-origin: left top;
+            top: 1154px;
+        }
+        @include mixin.tab {
+            transform: scale(0.7);
+            top: 954px;
+        }
+    }
+}
