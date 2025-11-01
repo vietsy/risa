@@ -92,6 +92,13 @@
                 display: block;
                 width: 100%;
                 height: auto;
+                &.addrLogo {
+                    width: 136px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
             }
         }
         &Title {
@@ -145,12 +152,31 @@
             border-bottom: 30vw solid #fff9e1;
             border-top: 0;
         }
-        &Bg {
+        &Grassy {
             display: block;
             width: 100%;
             height: auto;
             position: relative;
+            z-index: 2;
+        }
+        &Bike1 {
+            display: block;
+            width: 33.18%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 33%;
             z-index: 1;
+        }
+        &Bike2 {
+            display: block;
+            width: 25.7%;
+            height: auto;
+            position: absolute;
+            left: 24.6%;
+            bottom: 13.28%;
+            z-index: 3;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
         }
         &Aeon {
             display: block;
@@ -160,7 +186,17 @@
             position: absolute;
             top: 0;
             right: 14%;
-            z-index: 2;
+            z-index: 3;
+        }
+        &30min {
+            display: block;
+            width: 18.8024%;
+            height: auto;
+            position: absolute;
+            left: 6.15%;
+            bottom: 14%;
+            z-index: 1;
+            rotate: 9deg;
         }
         &Text {
             display: block;
@@ -170,7 +206,7 @@
             position: absolute;
             bottom: 6.68%;
             right: 2.085%;
-            z-index: 2;
+            z-index: 3;
         }
     }
 }
