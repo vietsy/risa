@@ -4,10 +4,20 @@
     padding: 639px 0 0;
     margin-top: -411px;
     background-image: url(../images/section-bg.webp);
+    background-color: #bef5ff;
     background-repeat: no-repeat;
     background-size: calc(100% + 759px) auto;
     background-position: top left -73px;
-
+    @include mixin.tab {
+        padding: 440px 0 0;
+        margin-top: -315px;
+        background-size: 200vw auto;
+        background-position: top -315px left -73px;
+    }
+    @include mixin.sp {
+        padding: 113px 0 0;
+        margin-top: -80px;
+    }
     &__intro {
         padding: 0 48px 0 202px;
         display: flex;
@@ -18,6 +28,16 @@
         @include mixin.m1440 {
             padding: 0 48px;
             gap: 60px;
+        }
+        @include mixin.tab {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+        }
+        @include mixin.sp {
+            padding: 0 20px;
+            gap: 0;
         }
         &::before {
             content: "";
@@ -30,6 +50,17 @@
             top: 308px;
             left: -73px;
             z-index: 0;
+            @include mixin.tab {
+                top: auto;
+                bottom: -220px;
+            }
+            @include mixin.sp {
+                width: 560px;
+                height: 206px;
+                aspect-ratio: unset;
+                left: calc(50% - 280px);
+                bottom: -124px;
+            }
         }
         &Content {
             width: 32%;
@@ -40,6 +71,13 @@
             @include mixin.m1440 {
                 width: 40%;
             }
+            @include mixin.tab {
+                width: 100%;
+                padding-bottom: 0;
+            }
+            @include mixin.sp {
+                max-width: 256px;
+            }
         }
         &Img {
             width: 68%;
@@ -49,6 +87,14 @@
             @include mixin.m1440 {
                 width: 60%;
             }
+            @include mixin.tab {
+                width: 80%;
+            }
+            @include mixin.sp {
+                width: 100%;
+                max-width: 334px;
+                margin-top: -60px;
+            }
             img {
                 display: block;
                 width: 100%;
@@ -57,6 +103,9 @@
         }
         &Title {
             margin-bottom: 23px;
+            @include mixin.sp {
+                margin-bottom: 9px;
+            }
             img {
                 display: block;
                 width: 100%;
@@ -68,6 +117,10 @@
             line-height: 3.5rem;
             font-weight: 500;
             color: #052677;
+            @include mixin.sp {
+                font-size: 1.1rem;
+                line-height: 1.5rem;
+            }
         }
     }
 
@@ -82,12 +135,46 @@
         @include mixin.m1440 {
             padding: 0 48px;
         }
+        @include mixin.tab {
+            flex-direction: column;
+            min-height: auto;
+            padding: 0 48px;
+            margin-top: 120px;
+        }
+        @include mixin.sp {
+            margin-top: 102px;
+        }
+        &::before {
+            content: "";
+            width: 387px;
+            height: 142px;
+            background: url(../images/cloud.webp) no-repeat center;
+            background-size: cover;
+            mix-blend-mode: Screen;
+            position: absolute;
+            top: 0;
+            left: calc(50% - 194px);
+            z-index: 1;
+        }
         &Img {
             width: 853px;
             height: 862px;
             position: absolute;
             top: 0;
             left: calc(50% - 385px);
+            @include mixin.tab {
+                margin-top: -206px;
+                width: 577px;
+                height: 583px;
+                position: relative;
+                top: auto;
+                left: auto;
+                order: 2;
+            }
+            @include mixin.sp {
+                margin-top: -104px;
+                z-index: 0;
+            }
             img {
                 display: block;
                 width: 100%;
@@ -98,12 +185,23 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    @include mixin.tab {
+                        width: 106px;
+                        height: 73px;
+                    }
                 }
             }
         }
         &Title {
             position: relative;
             z-index: 1;
+            @include mixin.tab {
+                order: 1;
+            }
+            @include mixin.sp {
+                max-width: 186px;
+                z-index: 2;
+            }
             img {
                 display: block;
                 height: auto;
@@ -117,6 +215,13 @@
             text-align: center;
             position: relative;
             z-index: 1;
+            @include mixin.tab {
+                order: 3;
+            }
+            @include mixin.sp {
+                font-size: 1.1rem;
+                line-height: 1.5rem;
+            }
             strong {
                 font-weight: 600;
             }
@@ -126,6 +231,10 @@
     &__road {
         margin-top: 89px;
         position: relative;
+        @include mixin.sp {
+            padding-top: 16%;
+            margin-top: 40px;
+        }
         &::before {
             content: "";
             width: 0;
@@ -167,6 +276,11 @@
             top: 0;
             left: 33%;
             z-index: 1;
+            @include mixin.sp {
+                width: 46.512%;
+                left: 4.186%;
+                rotate: 13deg;
+            }
         }
         &Bike2 {
             display: block;
@@ -177,6 +291,11 @@
             bottom: 13.28%;
             z-index: 3;
             transform: matrix(-1, 0, 0, 1, 0, 0);
+            @include mixin.sp {
+                width: 24.4186%;
+                left: 28.3721%;
+                rotate: -5deg;
+            }
         }
         &Aeon {
             display: block;
@@ -187,6 +306,10 @@
             top: 0;
             right: 14%;
             z-index: 3;
+            @include mixin.sp {
+                width: 28.139%;
+                right: 21.86%;
+            }
         }
         &30min {
             display: block;
@@ -197,6 +320,9 @@
             bottom: 14%;
             z-index: 1;
             rotate: 9deg;
+            @include mixin.sp {
+                bottom: 12%;
+            }
         }
         &Text {
             display: block;
@@ -207,6 +333,12 @@
             bottom: 6.68%;
             right: 2.085%;
             z-index: 3;
+            @include mixin.sp {
+                width: 49.767%;
+                right: 21.395%;
+                bottom: -8%;
+                rotate: 3deg;
+            }
         }
     }
 }

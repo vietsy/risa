@@ -20,21 +20,27 @@
     <body>
         <header class="c-header" aria-label="Header">
             <h1 class="c-header__logo">
-                <img
-                    src="assets/images/logo.webp"
-                    alt="Chào mừng đến 'địa bàn' của tớ: Tiểu vương quốc Risa"
-                    width="769"
-                    height="381"
-                />
+                <picture>
+                    <source srcset="assets/images/logo_sp.svg" media="(max-width: 768px)" />
+                    <img
+                        src="assets/images/logo.webp"
+                        alt="Chào mừng đến 'địa bàn' của tớ: Tiểu vương quốc Risa"
+                        width="769"
+                        height="381"
+                    />
+                </picture>
             </h1>
-            <img
-                class="c-header__bg"
-                src="assets/images/header-bg.webp"
-                alt=""
-                width="1920"
-                height="809"
-                aria-hidden="true"
-            />
+            <picture>
+                <source srcset="assets/images/header-bg_sp.webp" media="(max-width: 768px)" />
+                <img
+                    class="c-header__bg"
+                    src="assets/images/header-bg.webp"
+                    alt=""
+                    width="1920"
+                    height="809"
+                    aria-hidden="true"
+                />
+            </picture>
         </header>
 
         <main class="p-top" aria-label="Main Content">
@@ -44,12 +50,15 @@
                     mà tớ rất tự hào,
                 </h2>
                 <p class="mainVisual__text">
-                    <img
-                        src="assets/images/mainVisual-text.webp"
-                        alt="Một tòa tháp cực 'sịn' dành riêng cho trẻ em, nơi mọi nơi ánh nắng đều vì tiếng cười của tớ mà chói lọi! Nhắc lại cùng tớ nào: Tiểu vương quốc Risa"
-                        width="902"
-                        height="541"
-                    />
+                    <picture>
+                        <source srcset="assets/images/mainVisual-text_sp.svg" media="(max-width: 768px)" />
+                        <img
+                            src="assets/images/mainVisual-text.webp"
+                            alt="Một tòa tháp cực 'sịn' dành riêng cho trẻ em, nơi mọi nơi ánh nắng đều vì tiếng cười của tớ mà chói lọi! Nhắc lại cùng tớ nào: Tiểu vương quốc Risa"
+                            width="902"
+                            height="541"
+                        />
+                    </picture>
                 </p>
                 <img class="mainVisual__bg" src="assets/images/mainVisual-bg.png" alt="" sizes="100vw" loading="lazy" />
                 <span class="mainVisual__icon1" aria-hidden="true"></span>
@@ -112,7 +121,7 @@
                         (sau khi Quốc lộ 13 mở rộng đó!).
                     </p>
                 </article>
-                <article class="about__road">
+                <div class="about__road">
                     <img
                         class="about__roadGrassy"
                         src="assets/images/about-road-grassy.webp"
@@ -160,7 +169,162 @@
                         height="349"
                         loading="lazy"
                     />
-                </article>
+                </div>
+            </section>
+            <section class="tower">
+                <picture>
+                    <source srcset="assets/images/tower-bg1_sp.webp" media="(max-width: 768px)" />
+                    <img class="tower__bg1" src="assets/images/tower-bg1.webp" alt="" sizes="100vw" loading="lazy" />
+                </picture>
+                <picture>
+                    <source srcset="assets/images/tower-bg2_sp.webp" media="(max-width: 768px)" />
+                    <img class="tower__bg2" src="assets/images/tower-bg2.webp" alt="" sizes="100vw" loading="lazy" />
+                </picture>
+
+                <h2 class="tower__title">
+                    <img
+                        src="assets/images/tower-title.webp"
+                        alt="Nắng đầy sân cây đầy vườn"
+                        width="652"
+                        height="400"
+                        loading="lazy"
+                    />
+                </h2>
+                <p class="tower__text1">
+                    <img
+                        src="assets/images/tower-text1.webp"
+                        alt="và tớ lớn lên luôn đầy ắp tiếng cười"
+                        width="545"
+                        height="420"
+                        loading="lazy"
+                    />
+                </p>
+                <p class="tower__text2">
+                    <img
+                        src="assets/images/tower-text2.webp"
+                        alt="cô chú nói Risa là toà tháp được thiết kế cho trẻ em như chúng mình vậy đó"
+                        width="923"
+                        height="395"
+                        loading="lazy"
+                    />
+                </p>
+                <p class="tower__text3">
+                    Nơi bọn mình được lớn lên trong một thế giới đầy yêu thương,
+                    <span>ĐƯỢC DƯỠNG LÀNH TỪ GỐC RỄ!</span>
+                    <strong>Được</strong> tôn trọng,<br />
+                    <strong>Được</strong> lắng nghe,<br />
+                    <strong>Được</strong> làm chủ,<br />
+                    <strong>Được</strong> tự chọn điều mình thích!
+                </p>
+                <p class="tower__text4">
+                    Ở đây, mỗi gia đình đều là một tiểu vương quốc hạnh phúc<br />
+                    và mỗi em bé chính là một công dân toàn cầu của thế giới mai sau..
+                </p>
+                <img
+                    class="tower__icon1"
+                    src="assets/images/tower-icon1.webp"
+                    alt=""
+                    width="197"
+                    height="183"
+                    loading="lazy"
+                />
+                <img
+                    class="tower__icon2"
+                    src="assets/images/tower-icon2.webp"
+                    alt=""
+                    width="611"
+                    height="372"
+                    loading="lazy"
+                />
+                <img
+                    class="tower__icon3"
+                    src="assets/images/tower-icon3.webp"
+                    alt=""
+                    width="510"
+                    height="255"
+                    loading="lazy"
+                />
+            </section>
+            <section class="principles">
+                <picture>
+                    <source srcset="assets/images/principles-bg_sp.jpg" media="(max-width: 768px)" />
+                    <img
+                        class="principles__bg"
+                        src="assets/images/principles-bg.jpg"
+                        alt=""
+                        sizes="100vw"
+                        loading="lazy"
+                    />
+                </picture>
+
+                <img
+                    class="principles__icon1"
+                    src="assets/images/principles-icon1.webp"
+                    alt=""
+                    width="405"
+                    height="259"
+                    loading="lazy"
+                />
+                <img
+                    class="principles__icon2"
+                    src="assets/images/principles-icon2.webp"
+                    alt=""
+                    width="608"
+                    height="565"
+                    loading="lazy"
+                />
+                <h2 class="principles__title">
+                    <picture>
+                        <source srcset="assets/images/principles-title_sp.svg" media="(max-width: 768px)" />
+                        <img
+                            src="assets/images/principles-title.webp"
+                            alt="Để tạo nên Vương Quốc Risa, các cô chú đã tìm kiếm khắp thế giới, nghiên cứu hết tất cả những điều hay ho để tìm ra..."
+                            width="934"
+                            height="336"
+                            loading="lazy"
+                        />
+                    </picture>
+                </h2>
+                <h3 class="principles__title2">
+                    <img
+                        src="assets/images/principles-title2.webp"
+                        alt="3 nguyên lý xây dựng tốt nhất"
+                        width="826"
+                        height="482"
+                        loading="lazy"
+                    />
+                </h3>
+                <ul class="principles__list">
+                    <li>
+                        <img src="assets/images/principles-img1.webp" alt="" width="620" height="424" loading="lazy" />
+                    </li>
+                    <li>
+                        <img src="assets/images/principles-img2.webp" alt="" width="620" height="422" loading="lazy" />
+                    </li>
+                    <li>
+                        <img src="assets/images/principles-img3.webp" alt="" width="620" height="422" loading="lazy" />
+                    </li>
+                </ul>
+                <div class="principles__content">
+                    <h3 class="principles__title3">
+                        <img
+                            src="assets/images/principles-title3.webp"
+                            alt="không chỉ tớ đâu bố mẹ cũng mê risa cực"
+                            width="600"
+                            height="177"
+                            loading="lazy"
+                        />
+                    </h3>
+                    <p>
+                        Bố Mẹ bảo, chọn <strong>RISA</strong> là quyết định <br />sáng suốt nhất của nhà mình đó. Vì ở
+                        đây,<br />
+                        mỗi căn nhà không chỉ để ở, mà còn là một <br />viên gạch xây tương lai, nơi một cộng đồng
+                        <br />dưỡng lành hình thành từ gốc rễ<br /><br />
+                        Biết đâu mai này, sẽ còn nhiều<br />
+                        <strong>“tiểu vương quốc”</strong> khác nữa sẽ xuất <br />hiện! Nghĩ mà xem, một mái nhà nhỏ có
+                        <br />thể làm nên cả thế giới tốt đẹp hơn, <br />nghe ngầu thật đấy!
+                    </p>
+                </div>
             </section>
         </main>
     </body>

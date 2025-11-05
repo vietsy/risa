@@ -1,0 +1,167 @@
+@use "mixin";
+
+.principles {
+    position: relative;
+    background: #69cbfc;
+    @include mixin.sp {
+        padding-top: 96px;
+        background: linear-gradient(to right, #59bbf6, #53b7f2, #4fb5f2, #4eb2f0);
+    }
+    &__bg {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 0;
+        @include mixin.sp {
+            margin-top: -30%;
+        }
+    }
+    &__icon1 {
+        display: block;
+        width: 21.09375%;
+        height: auto;
+        position: absolute;
+        top: 4.3785%;
+        right: 6.77083%;
+        z-index: 1;
+        @include mixin.sp {
+            width: 23.7209%;
+            left: 1%;
+            right: auto;
+        }
+    }
+    &__icon2 {
+        display: block;
+        width: 31.667%;
+        height: auto;
+        position: absolute;
+        top: 11.047%;
+        left: 6.77083%;
+        z-index: 1;
+        @include mixin.sp {
+            width: 29.5348%;
+            top: 12%;
+            left: auto;
+            right: 0;
+        }
+    }
+    &__title {
+        width: 48.6458334%;
+        position: absolute;
+        top: 49px;
+        left: 5.9375%;
+        z-index: 2;
+        @include mixin.sp {
+            width: 257px;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__title2 {
+        width: 43.0208334%;
+        position: absolute;
+        top: 30.782%;
+        left: 4.5834%;
+        z-index: 1;
+        @include mixin.sp {
+            width: 193px;
+            top: 81px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__title3 {
+        width: 31.25%;
+        @include mixin.m1440 {
+            width: 36%;
+        }
+        @include mixin.sp {
+            width: 132px;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__list {
+        list-style: none;
+        width: 100%;
+        padding: 0 20px 0 40px;
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 43.767%;
+        left: 0;
+        z-index: 1;
+        @include mixin.sp {
+            gap: 10px;
+            top: 44%;
+        }
+        @include mixin.max(560px) {
+            top: 46%;
+        }
+        @include mixin.max(375px) {
+            top: 48%;
+        }
+        li {
+            display: block;
+            width: calc(100% / 3 - (20px * 2 / 3));
+            @include mixin.sp {
+                width: calc(100% / 3 - (10px * 2 / 3));
+            }
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    &__content {
+        width: 100%;
+        padding-left: 5.9375%;
+        position: absolute;
+        top: 68.55%;
+        left: 0;
+        z-index: 1;
+        @include mixin.m1440 {
+            bottom: 5%;
+        }
+        @include mixin.sp {
+            padding-left: 8.6%;
+        }
+        p {
+            margin-top: 43px;
+            font-size: 3rem;
+            line-height: 2;
+            color: #000;
+            @include mixin.m1440 {
+                margin-top: 32px;
+                font-size: 2.4rem;
+                line-height: 1.8;
+            }
+            @include mixin.tab {
+                font-size: 1.8rem;
+            }
+            @include mixin.sp {
+                font-size: 1.1rem;
+                line-height: 1.6rem;
+            }
+            strong {
+                color: #ff3e21;
+            }
+        }
+    }
+}

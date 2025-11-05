@@ -1,0 +1,189 @@
+@use "mixin";
+
+.tower {
+    position: relative;
+    @include mixin.sp {
+        padding-top: 26%;
+    }
+    &::after {
+        content: "";
+        width: 100%;
+        height: 9%;
+        background: #69cbfc;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        z-index: 0;
+        @include mixin.sp {
+            background: linear-gradient(to right, #59bbf6, #53b7f2, #4fb5f2, #4eb2f0);
+        }
+    }
+    &__bg1,
+    &__bg2 {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 0;
+    }
+    &__bg2 {
+        z-index: 1;
+    }
+    &__title {
+        width: 33.95834%;
+        position: absolute;
+        top: 4.3825%;
+        left: 27.03125%;
+        z-index: 1;
+        @include mixin.sp {
+            width: 47.21%;
+            top: 6%;
+            left: 21.395%;
+            rotate: -9deg;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__text1 {
+        width: 28.3855%;
+        position: absolute;
+        top: 22.0045%;
+        left: 24.89584%;
+        z-index: 1;
+        @include mixin.sp {
+            width: 47.67%;
+            top: 24%;
+            left: 15.116279%;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__text2 {
+        width: 48.073%;
+        position: absolute;
+        top: 43.1813%;
+        left: 32.1354167%;
+        z-index: 1;
+        @include mixin.sp {
+            width: 75.348%;
+            top: 45.1813%;
+            left: 13.95%;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__text3 {
+        max-width: 613px;
+        font-size: 3.8rem;
+        line-height: 6rem;
+        color: #000;
+        position: absolute;
+        left: 5.9375%;
+        bottom: 19.89%;
+        z-index: 1;
+        @include mixin.m1440 {
+            bottom: 17.89%;
+        }
+        @include mixin.tab {
+            font-size: 2.4rem;
+            line-height: 4rem;
+        }
+        @include mixin.sp {
+            max-width: 184px;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            top: 61%;
+            left: 20.465%;
+            bottom: auto;
+        }
+        span {
+            display: block;
+            font-size: 4rem;
+            line-height: 5rem;
+            color: #6f7e18;
+            font-weight: bold;
+            margin-bottom: 20px;
+            @include mixin.tab {
+                font-size: 2.8rem;
+                line-height: 3rem;
+            }
+            @include mixin.sp {
+                font-size: 1.2rem;
+                line-height: 1;
+            }
+        }
+        strong {
+            color: #ff360d;
+        }
+    }
+    &__text4 {
+        width: 100%;
+        font-family: "Amatic SC", sans-serif;
+        font-size: 5rem;
+        line-height: 6rem;
+        text-align: center;
+        font-weight: 700;
+        color: #fff;
+        position: absolute;
+        top: 88.7835%;
+        left: 0;
+        z-index: 2;
+        @include mixin.tab {
+            font-size: 3rem;
+            line-height: 3.5rem;
+        }
+        @include mixin.sp {
+            font-size: 1.5rem;
+            line-height: 1.65rem;
+            top: 90.5%;
+        }
+    }
+    &__icon1 {
+        display: block;
+        width: 10.26042%;
+        height: auto;
+        position: absolute;
+        top: 4.414%;
+        left: 6.77084%;
+        z-index: 1;
+        @include mixin.sp {
+            display: none;
+        }
+    }
+    &__icon2 {
+        display: block;
+        width: 31.8229167%;
+        height: auto;
+        position: absolute;
+        top: 46.953%;
+        left: -15.8854166667%;
+        @include mixin.sp {
+            width: 34.6511627907%;
+            top: 58.953%;
+            left: -16.9767%;
+        }
+    }
+    &__icon3 {
+        display: block;
+        width: 26.5625%;
+        height: auto;
+        position: absolute;
+        top: 56.3592%;
+        left: 35.46875%;
+        z-index: 0;
+        @include mixin.sp {
+            width: 26.9767%;
+            left: auto;
+            right: 6.9767%;
+        }
+    }
+}

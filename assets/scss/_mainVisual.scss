@@ -3,6 +3,9 @@
 .mainVisual {
     padding-top: 35px;
     position: relative;
+    @include mixin.sp {
+        padding-top: 31px;
+    }
     &__title {
         font-family: "Amatic SC", sans-serif;
         font-weight: 700;
@@ -12,6 +15,10 @@
         text-align: center;
         position: relative;
         z-index: 1;
+        @include mixin.sp {
+            font-size: 2.2rem;
+            line-height: 2.8rem;
+        }
     }
     &__text {
         width: 100%;
@@ -24,9 +31,20 @@
             padding: 0 36% 0 10%;
             top: 323px;
         }
+        @include mixin.sp {
+            position: relative;
+            top: auto;
+            left: auto;
+            margin-top: 80px;
+            padding: 0;
+        }
         img {
             display: block;
             height: auto;
+            @include mixin.sp {
+                max-width: 289px;
+                margin: 0 auto;
+            }
         }
     }
     &__bg {
@@ -36,6 +54,9 @@
         margin-top: 314px;
         position: relative;
         z-index: 1;
+        @include mixin.sp {
+            margin-top: -104px;
+        }
     }
     &__icon1 {
         display: block;
@@ -49,6 +70,9 @@
         top: -15px;
         left: -544px;
         z-index: 0;
+        @include mixin.sp {
+            display: none;
+        }
     }
     &__icon2 {
         display: block;
@@ -62,6 +86,9 @@
         top: 364px;
         right: -709px;
         z-index: 0;
+        @include mixin.sp {
+            display: none;
+        }
     }
     &__icon3 {
         display: block;
@@ -73,6 +100,12 @@
         top: 214px;
         right: 0;
         z-index: 0;
+        @include mixin.sp {
+            width: 136px;
+            height: 171px;
+            top: -37px;
+            right: -57px;
+        }
     }
     &__icon4 {
         display: block;
@@ -91,8 +124,15 @@
             left: 0;
         }
         @include mixin.tab {
-            transform: scale(0.7);
+            transform: scale(0.5);
             top: 729px;
+        }
+        @include mixin.sp {
+            width: 81px;
+            height: 58px;
+            transform: scale(1);
+            top: 427px;
+            left: 5.11628%;
         }
     }
     &__icon5 {
@@ -113,6 +153,15 @@
         @include mixin.tab {
             transform: scale(0.7);
             top: 954px;
+        }
+        @include mixin.sp {
+            width: 163px;
+            height: 142px;
+            transform: scale(1) matrix(-1, 0, 0, 1, 0, 0);
+            transform-origin: unset;
+            top: 211px;
+            left: auto;
+            right: -69px;
         }
     }
 }

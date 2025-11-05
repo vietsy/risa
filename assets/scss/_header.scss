@@ -1,3 +1,5 @@
+@use "mixin";
+
 .c-header {
     width: 100%;
     position: relative;
@@ -7,8 +9,13 @@
         position: absolute;
         top: 16.688%;
         left: 0;
+        @include mixin.sp {
+            padding: 0 48.373% 0 0;
+            top: 30.5%;
+        }
         img {
             display: block;
+            width: 100%;
             height: auto;
         }
     }
