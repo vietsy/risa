@@ -15,6 +15,7 @@
         <meta property="og:url" content="https://yourdomain.com/" />
 
         <!-- CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="assets/css/styles.css" />
     </head>
     <body>
@@ -326,6 +327,120 @@
                     </p>
                 </div>
             </section>
+            <section class="luxury">
+                <img
+                    class="luxury__icon1"
+                    src="assets/images/luxury-icon1.png"
+                    alt=""
+                    width="631"
+                    height="593"
+                    loading="lazy"
+                />
+                <span class="luxury__icon2" aria-hidden="true"></span>
+                <img
+                    class="luxury__icon3"
+                    src="assets/images/tower-icon1.webp"
+                    alt=""
+                    width="197"
+                    height="183"
+                    loading="lazy"
+                />
+                <h2 class="luxury__title">
+                    <img
+                        src="assets/images/luxury-title.png"
+                        alt="Risa by LA PUNA của tớ 'sịn' sò lắm! Tiểu vương quốc của tớ mà lị, cái gì cũng có:"
+                        width="767"
+                        height="356"
+                        loading="lazy"
+                    />
+                </h2>
+                <div class="luxury__slider">
+                    <img
+                        class="luxury__sliderImg"
+                        src="assets/images/luxury-bg1.png"
+                        alt=""
+                        width="863"
+                        height="501"
+                        loading="lazy"
+                    />
+                    <div class="luxury__sliderWrap">
+                        <div class="swiper luxury">
+                            <div class="swiper-wrapper" role="list">
+                                <div class="swiper-slide luxury__sliderItem" role="listitem">
+                                    <img src="assets/images/luxury-img1.png" alt="" sizes="89vw" loading="lazy" />
+                                </div>
+                                <div class="swiper-slide luxury__sliderItem" role="listitem">
+                                    <img src="assets/images/luxury-img1.png" alt="" sizes="89vw" loading="lazy" />
+                                </div>
+                            </div>
+                        </div>
+                        <button class="luxury__sliderPrev slider__prev" type="button" aria-label="Prev">
+                            <img src="assets/images/slider-arrow.png" alt="" width="130" height="130" loading="lazy" />
+                        </button>
+                        <button class="luxury__sliderNext slider__next" type="button" aria-label="Next">
+                            <img src="assets/images/slider-arrow.png" alt="" width="130" height="130" loading="lazy" />
+                        </button>
+                    </div>
+                </div>
+                <img class="luxury__bg" src="assets/images/luxury-bg2.png" alt="" sizes="100vw" loading="lazy" />
+                <p class="luxury__text">
+                    <img
+                        src="assets/images/luxury-text.png"
+                        alt="dự án thân thiện với trẻ em nhất 2025"
+                        width="853"
+                        height="605"
+                        loading="lazy"
+                    />
+                </p>
+            </section>
+            <section class="info">
+                <h2 class="info__titlePC">
+                    <img
+                        src="assets/images/info-title.png"
+                        alt="đây là các cô các chú sứ giả ở Vương Quốc RISA của tớ"
+                        width="683"
+                        height="173"
+                        loading="lazy"
+                    />
+                </h2>
+                <div class="info__logo">
+                    <h2 class="info__titleSP">
+                        <img src="assets/images/info-title_sp.svg" alt="" width="147" height="39" loading="lazy" />
+                    </h2>
+                    <div class="swiper">
+                        <div class="swiper-wrapper" role="list">
+                            <div class="swiper-slide info__logoItem" role="listitem">
+                                <img src="assets/images/info-logo.png" alt="" sizes="50vw" loading="lazy" />
+                            </div>
+                            <div class="swiper-slide info__logoItem" role="listitem">
+                                <img src="assets/images/info-logo.png" alt="" sizes="50vw" loading="lazy" />
+                            </div>
+                        </div>
+                    </div>
+                    <button class="info__logoPrev slider__prev" type="button" aria-label="Prev">
+                        <img src="assets/images/slider-arrow.png" alt="" width="80" height="74" loading="lazy" />
+                    </button>
+                    <button class="info__logoNext slider__next" type="button" aria-label="Next">
+                        <img src="assets/images/slider-arrow.png" alt="" width="80" height="74" loading="lazy" />
+                    </button>
+                </div>
+                <img class="info__bg" src="assets/images/info-bg.png" alt="" sizes="100vw" loading="lazy" />
+            </section>
         </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const swipper = new Swiper(".swiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    loop: true,
+                    navigation: {
+                        nextEl: ".slider__next",
+                        prevEl: ".slider__prev",
+                    },
+                });
+            });
+        </script>
     </body>
 </html>

@@ -1,0 +1,162 @@
+@use "mixin";
+
+.luxury {
+    background: #fefde4;
+    position: relative;
+    margin-top: -3px;
+    @include mixin.sp {
+        background: #fff9e1;
+    }
+    &__icon1 {
+        display: block;
+        width: 32.86458%;
+        height: auto;
+        position: absolute;
+        top: -8%;
+        left: 0;
+        z-index: 0;
+        @include mixin.m1440 {
+            top: -7%;
+        }
+        @include mixin.max(1200px) {
+            top: -4%;
+        }
+        @include mixin.sp {
+            position: unset;
+        }
+    }
+    &__icon2 {
+        display: block;
+        width: 15.1%;
+        aspect-ratio: 290 / 389;
+        background: url(../images/nhayDu.webp) no-repeat center;
+        background-size: cover;
+        position: absolute;
+        top: 9.5%;
+        right: 4.3229%;
+        z-index: 0;
+        @include mixin.sp {
+            width: 115px;
+            aspect-ratio: 89 / 119;
+            top: 16%;
+            right: 0;
+        }
+    }
+    &__icon3 {
+        display: block;
+        width: 10.26042%;
+        height: auto;
+        position: absolute;
+        top: 71.4%;
+        left: 1.40625%;
+        z-index: 1;
+        @include mixin.m1440 {
+            top: 71.7%;
+        }
+        @include mixin.tab {
+            top: 71.9%;
+        }
+        @include mixin.sp {
+            display: none;
+        }
+    }
+    &__title {
+        width: 39.948%;
+        margin-left: auto;
+        margin-right: 7.8125%;
+        @include mixin.sp {
+            width: 49.7674%;
+            margin: 5.4% auto 0;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__slider {
+        margin-top: 80px;
+        @include mixin.sp {
+            margin-top: 16px;
+        }
+        &Img {
+            display: block;
+            width: 44.948%;
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        &Wrap {
+            width: 89.6355%;
+            background: #fee8c1;
+            margin: -2.3% auto 0;
+            border-radius: 18px;
+            position: relative;
+        }
+        &Item {
+            width: 100%;
+            padding: 2.5%;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+        &Prev,
+        &Next {
+            appearance: none;
+            width: 6.77%;
+            aspect-ratio: 130 / 130;
+            background: transparent;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            z-index: 3;
+            transform: translateY(-50%);
+            cursor: pointer;
+            @include mixin.sp {
+                width: 8.14%;
+            }
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            &.swiper-button-disabled {
+                opacity: 0.4;
+            }
+        }
+        &Prev {
+            left: -3.2%;
+        }
+        &Next {
+            right: -3.2%;
+            img {
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+            }
+        }
+    }
+    &__bg {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+    }
+    &__text {
+        width: 44.427%;
+        position: absolute;
+        top: 56.5%;
+        left: 4.79%;
+        z-index: 2;
+        @include mixin.sp {
+            top: 65%;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}

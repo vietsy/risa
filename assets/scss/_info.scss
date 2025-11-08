@@ -1,0 +1,97 @@
+@use "mixin";
+
+.info {
+    background: #fefde4;
+    margin-top: -16%;
+    position: relative;
+    @include mixin.sp {
+        background: #fff9e1;
+        margin-top: -13%;
+    }
+    &__bg {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: -3%;
+        position: relative;
+        z-index: 0;
+    }
+    &__titlePC {
+        width: 35.573%;
+        margin-left: 5.677%;
+        @include mixin.sp {
+            display: none;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__titleSP {
+        display: none;
+        width: 77%;
+        margin: 0 auto 6px;
+        @include mixin.sp {
+            display: block;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__logo {
+        width: 44.53125%;
+        position: absolute;
+        left: 47.55%;
+        bottom: 44.7%;
+        z-index: 1;
+        @include mixin.sp {
+            width: 42.559%;
+            left: 43.465%;
+            bottom: 37.7%;
+        }
+        &Item {
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+        &Prev,
+        &Next {
+            appearance: none;
+            width: 9.35%;
+            aspect-ratio: 80 / 74;
+            background: transparent;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            z-index: 3;
+            transform: translateY(-50%);
+            cursor: pointer;
+            @include mixin.sp {
+                transform: translateY(0);
+                top: 62%;
+            }
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            &.swiper-button-disabled {
+                opacity: 0.4;
+            }
+        }
+        &Prev {
+            left: -9.35%;
+        }
+        &Next {
+            right: -9.35%;
+            img {
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+            }
+        }
+    }
+}
